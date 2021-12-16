@@ -1,0 +1,19 @@
+@mixin FR{
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin FC{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin font-title{
+    font-family: shrikhand;
+    color: black;
+}
+
+@mixin font-txt{
+    font-family: roboto;
+    color: black;
+}
