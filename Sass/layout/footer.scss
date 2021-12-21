@@ -1,0 +1,41 @@
+footer{
+    @include FC;
+    background: $color-dark;
+    width: $fullwidth;
+    padding-bottom: 25px;
+}
+
+#logo_footer{
+    margin: 20px;
+    filter: invert(100%);
+    width: 20%;
+}
+
+.logo_footer_img{
+    width: 100%;
+}
+
+.footer_container{
+    @include FC;
+    width: $fullwidth;
+}
+
+.footer_links{
+    @include FR;
+    text-decoration: none;
+    @include font-txt;
+    color: $color-basic;
+    margin-bottom: 8px;
+    margin-left: 20px;
+    align-items: baseline;
+}
+
+.contain_footer_txt_icon{
+    display: flex;
+    width: 10px;
+}
+
+.footer_txt_bold{
+    margin-left: 15px;
+    font-weight: $fontbold; 
+}

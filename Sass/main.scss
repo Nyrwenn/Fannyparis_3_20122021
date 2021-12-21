@@ -4,25 +4,13 @@
 
 @import "./utils/mixins.scss";
 
-header{
-    background:blue;
-    @include FR;
-    width: 100%;
-}
+@import "./layout/header.scss";
 
-#logo_header{
-    background:red;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
+@import "./components/buttons.scss";
 
-.logo_header_img{
-    width: 50%;
-}
+@import "./pages/accueil.scss";
 
-.restaurants_card_img{
-    width: 150px;
-}
+@import "./components/cards.scss";
+
+@import "./layout/footer.scss";
+

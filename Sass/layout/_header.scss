@@ -1,0 +1,17 @@
+header{
+    @include FR;
+    width: 100%;
+}
+
+#logo_header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    box-shadow: 1px 2px 8px 0px rgba(53,53,53,0.28);
+}
+
+.logo_header_img{
+    width: 165px;
+    margin-top: 22px;
+    margin-bottom: 12px;
+}

@@ -1,0 +1,78 @@
+.contain_restaurants{
+    @include FC;
+    background: $background-light;
+    width: $fullwidth;
+    padding-bottom: 60px;
+}
+
+.restaurants{
+    @include FC;
+    width: $fullwidth;
+    align-items: center;
+}
+
+.restaurants_card{
+    @include FC;
+    background:$color-basic;
+    width: $centerwidth;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    box-shadow: 0px 6px 9px -1px rgba(0,0,0,0.11);
+}
+
+.restaurants_card_img{
+    object-fit: cover;
+    object-position: 39% 61%;
+    height: 180px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.restaurants_card_new{
+    @include FC;
+    @include font-txt;
+    font-weight: $fontbold;
+    color: $color-tertiary-dark;
+    align-self: flex-start;
+    background: $color-tertiary;
+    position: absolute;
+    right: 45px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.container_restaurants_title{
+    @include FR;
+    width: $fullwidth;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.restaurants_title{
+    @include FC;
+    width: 50%;
+}
+
+.restaurants_title_name{
+    @include restaurant-txt;
+    font-weight: 900;
+    margin-top: 15px;
+}
+
+.restaurants_title_place{
+    @include restaurant-txt;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.restaurants_favorite_icon{
+    @include FR;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-right: 20px;  
+}
+
+.restaurants_favorite_icon_img{
+    color: black;
+}

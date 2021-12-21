@@ -1,3 +1,13 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$color-dark: #353535;
+$color-basic: white;
+$color-primary-light: lighten($color-primary, 5%);
+$color-secondary-light: lighten($color-secondary, 5%);
+$background-dark: #EAEAEA;
+$background-light: #F6F6F6;
+$fullwidth: 100%;
+$centerwidth: 85%;
+$fontbold: 500;
+$color-tertiary-dark: darken($color-tertiary,40%);
