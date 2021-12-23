@@ -27,3 +27,26 @@
     @include font-txt;
     margin-left: 10px;
 }
+
+@mixin boxs{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin buttons{
+    display: flex;
+    margin-bottom: 57px;
+    border-radius: 35px;
+    background: linear-gradient($color-secondary, $color-primary);
+    border: none;
+    color:$color-basic;
+    font-family: roboto;
+    font-weight: $fontbold;
+    cursor: pointer;
+    @include shadows;
+}
+
+@mixin buttons-hover{
+    background: linear-gradient($color-secondary-light, $color-primary-light);
+    box-shadow: 0px 6px 9px -1px rgba(0,0,0,0.45);
+}

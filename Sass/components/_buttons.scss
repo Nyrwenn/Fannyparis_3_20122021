@@ -1,18 +1,24 @@
-.btn_explore{
+.contain_btn_explore, .contain_btn_command{
     display: flex;
+    justify-content: center;
+}
+
+.btn_explore{
+    @include buttons;
     margin-top: 30px;
-    margin-bottom: 57px;
-    border-radius: 35px;
     padding: 20px;
-    background: linear-gradient($color-secondary, $color-primary);
-    border: none;
-    color:$color-basic;
-    font-family: roboto;
-    font-weight: $fontbold;
-    @include shadows;
 
     &:hover{
-        background: linear-gradient($color-secondary-light, $color-primary-light);
-        box-shadow: 0px 6px 9px -1px rgba(0,0,0,0.45);
+        @include buttons-hover;
+    }
+}
+
+.btn_command{
+    @include buttons;
+    padding: 15px 45px 15px 45px;
+    margin-top: 10px;
+
+    &:hover{
+        @include buttons-hover;
     }
 }

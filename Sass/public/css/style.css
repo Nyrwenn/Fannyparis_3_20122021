@@ -18,20 +18,53 @@ header {
   margin-bottom: 12px;
 }
 
+.return {
+  text-decoration: none;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  color: #353535;
+}
+
+.contain_btn_explore, .contain_btn_command {
+  display: flex;
+  justify-content: center;
+}
+
 .btn_explore {
   display: flex;
-  margin-top: 30px;
   margin-bottom: 57px;
   border-radius: 35px;
-  padding: 20px;
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;
   color: white;
   font-family: roboto;
   font-weight: 500;
+  cursor: pointer;
   box-shadow: 0px 6px 9px -1px rgba(0, 0, 0, 0.25);
+  margin-top: 30px;
+  padding: 20px;
 }
 .btn_explore:hover {
+  background: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: 0px 6px 9px -1px rgba(0, 0, 0, 0.45);
+}
+
+.btn_command {
+  display: flex;
+  margin-bottom: 57px;
+  border-radius: 35px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  color: white;
+  font-family: roboto;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0px 6px 9px -1px rgba(0, 0, 0, 0.25);
+  padding: 15px 45px 15px 45px;
+  margin-top: 10px;
+}
+.btn_command:hover {
   background: linear-gradient(#ff93e1, #a16be0);
   box-shadow: 0px 6px 9px -1px rgba(0, 0, 0, 0.45);
 }
@@ -73,13 +106,13 @@ header {
   margin-bottom: 0;
 }
 
-h1 {
+h1.reserve {
   font-family: roboto;
   color: black;
   padding-top: 42px;
   margin-top: 0;
   text-align: center;
-  width: 85%;
+  width: 80%;
   margin-left: 40px;
   font-size: 1.8rem;
 }
@@ -93,11 +126,6 @@ h1 {
   width: 84%;
   margin: auto;
   font-size: 1.3rem;
-}
-
-.contain_btn_explore {
-  display: flex;
-  justify-content: center;
 }
 
 h2 {
@@ -120,15 +148,14 @@ h2 {
 .steps {
   display: flex;
   flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
   width: 85%;
-  height: auto;
   background: #F6F6F6;
   border-radius: 25px;
   padding-top: 30px;
   padding-bottom: 25px;
-  margin-bottom: 24px;
-  margin-left: auto;
-  margin-right: auto;
   box-shadow: 0px 6px 9px -1px rgba(0, 0, 0, 0.15);
 }
 .steps:hover {
@@ -310,6 +337,109 @@ footer {
 .footer_txt_bold {
   margin-left: 15px;
   font-weight: 500;
+}
+
+.img_container {
+  display: flex;
+  width: 100%;
+  height: 285px;
+  overflow: hidden;
+}
+.img_container .img_restaurants {
+  width: 100%;
+  display: flex;
+  align-self: center;
+}
+
+.container_menus {
+  width: 100%;
+  background: #F6F6F6;
+  border-radius: 50px 50px 0 0;
+  position: relative;
+  margin-top: -57px;
+}
+
+.name-logo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+h1.restaurants_name {
+  font-family: shrikhand;
+  color: black;
+  margin-top: 40px;
+  margin-left: 22px;
+}
+
+.logo_heart {
+  margin-top: 37px;
+  margin-right: 40px;
+}
+
+.bloc_menus {
+  width: 100%;
+  margin-bottom: 37px;
+}
+
+h3 {
+  font-family: roboto;
+  color: black;
+  font-weight: 300;
+  margin-left: 22px;
+  margin-bottom: 4px;
+}
+
+.line {
+  width: 47px;
+  height: 3px;
+  background: #99E2D0;
+  margin-left: 22px;
+  margin-bottom: 15px;
+}
+
+.bloc_dish {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 92%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 5px 12px 2px rgba(0, 0, 0, 0.15);
+}
+
+.dish_title {
+  font-family: roboto;
+  color: black;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 7px;
+}
+
+.dish_details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dish_details_txt {
+  font-family: roboto;
+  color: black;
+  font-weight: 300;
+  margin-left: 10px;
+  margin-bottom: 13px;
+  font-size: 0.9rem;
+}
+
+.dish_details_price {
+  font-family: roboto;
+  color: black;
+  font-weight: 500;
+  margin-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
