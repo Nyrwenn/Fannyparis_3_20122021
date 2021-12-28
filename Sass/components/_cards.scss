@@ -22,6 +22,7 @@
 }
 
 .restaurants_card_img{
+    width: 100%;
     object-fit: cover;
     object-position: 39% 61%;
     height: 180px;
@@ -51,7 +52,8 @@
 
 .restaurants_title{
     @include FC;
-    width: 50%;
+    width: 100%;
+    text-decoration: none;
 }
 
 .restaurants_title_name{
@@ -66,13 +68,9 @@
     margin-top: 5px;
 }
 
-.restaurants_favorite_icon{
-    @include FR;
-    text-decoration: none;
-    margin-top: 20px;
-    margin-right: 20px;  
-}
 
-.restaurants_favorite_icon_img{
-    color: black;
-}
+
+
+
+
+
