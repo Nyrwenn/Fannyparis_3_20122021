@@ -458,21 +458,6 @@ h3 {
   margin-left: 50px;
 }
 
-.check {
-  display: flex;
-  transform: translateX(105%);
-  width: 100px;
-  margin-left: -100px;
-  justify-content: center;
-  align-items: center;
-  background: #99E2D0;
-  transition: 2s;
-}
-
-.check_icon {
-  color: white;
-}
-
 .heartfull {
   position: absolute;
   right: 60px;
@@ -503,6 +488,82 @@ h3 {
   position: absolute;
   margin-top: 37px;
   right: 37px;
+}
+
+.check {
+  display: flex;
+  transform: translateX(105%);
+  width: 100px;
+  margin-left: -100px;
+  justify-content: center;
+  align-items: center;
+  background: #99E2D0;
+  transition: 2s;
+}
+
+.check_icon {
+  color: white;
+}
+
+.anim1 {
+  animation: progress-menu 1s;
+}
+
+.anim2 {
+  animation: progress-menu 2s;
+}
+
+.anim3 {
+  animation: progress-menu 3s;
+}
+
+.anim4 {
+  animation: progress-menu 4s;
+}
+
+.anim5 {
+  animation: progress-menu 5s;
+}
+
+.anim6 {
+  animation: progress-menu 6s;
+}
+
+.anim7 {
+  animation: progress-menu 7s;
+}
+
+.anim8 {
+  animation: progress-menu 8s;
+}
+
+.anim9 {
+  animation: progress-menu 9s;
+}
+
+.anim10 {
+  animation: progress-menu 10s;
+}
+
+@keyframes progress-menu {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  75% {
+    opacity: 0.5;
+  }
+  85% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,79 @@
+.heartfull{
+    @include heart;
+    transform: scale(0, 0);
+  }
+  
+  .heartempty{
+    @include heart;
+  }
+  
+  .containheart{
+   
+    &:hover{
+     
+      & > .heartfull{
+        display: block;
+        transition: transform 2s;
+        transform: scale(1, 1);
+        transform-origin: bottom center;
+      }
+  
+      
+      & > .heartempty{
+      fill: transparent;
+      transition: 3s;
+      transform-origin: top center;
+      }
+      
+        }
+        .p-rest{
+            @include heart-big;
+      }
+  }
+  
+  .check{
+    display: flex;
+    transform: translateX(105%);
+    width: 100px;
+    margin-left:-100px;
+    justify-content: center;
+    align-items: center;
+    background: $color-tertiary;
+    transition: 2s;
+
+}
+
+.check_icon{
+    color: $color-basic;
+}
+
+@for $i from 1 through 10 {
+  .anim#{$i} {
+     animation: progress-menu (1s * $i);
+  }
+}
+
+@keyframes progress-menu {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+    
+    50%{
+       opacity: 0;
+      transform: translateY(10px);
+    }
+   
+  75%{
+    opacity: 0.5;
+  }
+   
+    85%{
+      opacity: 0.8;
+    }
+   
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  }

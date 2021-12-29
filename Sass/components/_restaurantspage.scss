@@ -86,6 +86,7 @@ h3{
     width: $fullwidth;
 }
 
+
 .dish_title{
     @include font-txt;
     @include txt-overflow;
@@ -119,18 +120,3 @@ h3{
     margin-left: 50px;
 }
 
-.check{
-    display: flex;
-    transform: translateX(105%);
-    width: 100px;
-    margin-left:-100px;
-    justify-content: center;
-    align-items: center;
-    background: $color-tertiary;
-    transition: 2s;
-
-}
-
-.check_icon{
-    color: $color-basic;
-}
