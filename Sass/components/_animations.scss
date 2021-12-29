@@ -1,3 +1,90 @@
+.fullscreen{
+  position: fixed;
+  background:white;
+  width: 100vw;
+  height: 100vh;
+  animation: fullscreenanim 2.5s;
+  animation-fill-mode: forwards;
+}
+ 
+@keyframes fullscreenanim{
+  75%{
+    opacity: 1;
+  }
+  
+  99%{
+    z-index: 100;
+  
+  }
+  
+  100%{
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.loading{
+  width: 10vw;
+  height: 10vw;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin: auto;
+  margin-top: 45vh;
+}
+
+.line-primary{
+  @include loading-anim;
+  animation: rotation-line1 1.2s linear infinite;
+  animation-delay: -0.8s;
+  border-bottom: 4px solid $color-primary;
+}
+
+.line-secondary{
+  @include loading-anim;
+  animation: rotation-line2 1.2s linear infinite;
+  animation-delay: -0.4s;
+  border-bottom: 4px solid $color-secondary;
+}
+
+.line-tertiary{
+  @include loading-anim;
+  animation: rotation-line3 1.2s linear infinite;
+  animation-delay: 0s;
+  border-bottom: 4px solid $color-tertiary;
+}
+
+
+@keyframes rotation-line1{
+  0%{
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0);
+  }
+  100%{
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(1turn);
+  }
+}
+
+@keyframes rotation-line2{
+  0%{
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0);
+  }
+  
+  100%{
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(1turn);
+  }
+}
+
+@keyframes rotation-line3{
+  0%{
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0);
+  }
+  
+  100%{
+     transform: rotateX(35deg) rotateY(-45deg) rotateZ(1turn);
+    
+  }
+}
+
 .heartfull{
     @include heart;
     transform: scale(0, 0);
