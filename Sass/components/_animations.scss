@@ -88,10 +88,16 @@
 .heartfull{
     @include heart;
     transform: scale(0, 0);
+    @include tablet-desktop{
+      @include tabheart;
+    }
   }
   
   .heartempty{
     @include heart;
+    @include tablet-desktop{
+      @include tabheart;
+    }
   }
   
   .containheart{
@@ -116,7 +122,30 @@
         .p-rest{
             @include heart-big;
       }
-  }
+      &:active{
+
+        & > .heartfull{
+          display: block;
+          transition: transform 2s;
+          transform: scale(1, 1);
+          transform-origin: bottom center;
+        }
+    
+        
+        & > .heartempty{
+        fill: transparent;
+        transition: 3s;
+        transform-origin: top center;
+        }
+        
+          }
+          .p-rest{
+              @include heart-big;
+        }
+
+      }
+    
+  
   
   .check{
     display: flex;

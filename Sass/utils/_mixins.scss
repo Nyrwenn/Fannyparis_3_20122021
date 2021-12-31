@@ -53,7 +53,7 @@
 
 @mixin heart{
     position: absolute;
-    right: 60px;
+    right: 15%;
     margin-top: 20px;
     text-decoration: none;
 }
@@ -61,7 +61,7 @@
 @mixin heart-big{
     position: absolute;
     margin-top: 37px;
-    right: 37px;
+    right: 8%;
 }
 
 @mixin heart-full{
@@ -89,4 +89,26 @@
     width:10vw;
     height:10vw;
     transform-origin: 50% 50%;
+}
+
+@mixin mobile-only{
+    @media screen and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+}
+
+@mixin tablet-desktop{
+    @media screen and (min-width: map-get($breakpoints, tablet-desktop)){
+        @content;
+    }
+}
+
+@mixin flexRW{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@mixin tabheart{
+    right: auto;
+    margin-left: -55px;
 }

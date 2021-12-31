@@ -27,6 +27,8 @@
 
 h1.restaurants_name{
     @include font-title;
+    font-size: 1.6rem;
+    font-weight: 200;
     margin-top: 40px;
     margin-left: $margin-l-base;
 }
@@ -74,8 +76,21 @@ h3{
                 transition: 2500ms;
             }
         }
+    }
 
+    &:active{
+        & > .check{
+            display: flex;
+            transform: translateX(0%);
+            transform-origin: right center;
+            transition: 2s;
+            margin-left: 0;
 
+            & > .check_icon{
+                transform: rotate(360deg);
+                transition: 2500ms;
+            }
+        }
     }
 }
 

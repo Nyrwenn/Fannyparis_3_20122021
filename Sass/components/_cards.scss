@@ -3,12 +3,23 @@
     background: $background-light;
     width: $fullwidth;
     padding-bottom: 60px;
+    @include tablet-desktop{
+        width: $fullwidth;
+        align-items: center;
+    }
 }
+
 
 .restaurants{
     @include FC;
     width: $fullwidth;
     align-items: center;
+    @include tablet-desktop{
+        @include flexRW;
+        max-width: $width4k;
+        width: $fullwidth;
+        justify-content: space-evenly;
+    }
 }
 
 .restaurants_card{
@@ -19,6 +30,11 @@
     text-decoration: none;
     margin-bottom: 20px;
     box-shadow: 0px 6px 9px -1px rgba(0,0,0,0.11);
+    @include tablet-desktop{
+        position: relative;
+        width: 40%;
+        margin-bottom: 35px;
+    }
 }
 
 .restaurants_card_img{
@@ -27,20 +43,29 @@
     object-position: 39% 61%;
     height: 180px;
     border-radius: 20px 20px 0px 0px;
+    @include tablet-desktop{
+        height: 300px;
+    }
 }
 
 .restaurants_card_new{
-    @include FC;
     @include font-txt;
+    display: flex;
     font-weight: $fontbold;
     color: $color-tertiary-dark;
-    align-self: flex-start;
     background: $color-tertiary;
     position: absolute;
-    right: 45px;
-    margin-top: 15px;
-    padding: 10px;
+    right: 10%;
+    margin-top: -170px;
+    padding: 8px;
     border-radius: 2px;
+    @include tablet-desktop{
+        position: absolute;
+        max-width: $width4k;
+        right: auto;
+        margin-left: 70%;
+        margin-top: -290px;
+    }
 }
 
 .container_restaurants_title{
