@@ -1,14 +1,26 @@
+
+main{
+    max-width: $width4k;
+    margin: auto;
+}
+
 .img_container{
     display: flex;
     width: $fullwidth;
-    height: 285px;
     overflow: hidden;
+    height: 65vw;
+    @include tablet-desktop{
+        max-height: 650px;         
+    }
+}
 
-    .img_restaurants{
+.img_restaurants{
     width: $fullwidth;
     display: flex;
     align-self: center;
-}
+    @include tablet-desktop{
+        margin-top: -15%;
+    }
 }
 
 .container_menus{
@@ -16,13 +28,20 @@
     background: $background-light;
     border-radius: 50px 50px 0 0;
     position: relative;
-    margin-top: -57px;
+    margin-top: -45px;
+    @include tablet-desktop{
+        margin-top: -15%;
+        
+    }
 }
 
 .name-logo{
     @include FR;
     width: $fullwidth;
     justify-content: space-between;
+    @include tablet-desktop{
+        justify-content: center;
+    }
 }
 
 h1.restaurants_name{
@@ -31,6 +50,9 @@ h1.restaurants_name{
     font-weight: 200;
     margin-top: 40px;
     margin-left: $margin-l-base;
+    @include tablet-desktop{
+        font-size: 2.5rem;
+    }
 }
 
 .bloc_menus{

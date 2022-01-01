@@ -141,6 +141,9 @@
           }
           .p-rest{
               @include heart-big;
+              @include tablet-desktop{
+                margin-top: 45px;
+              }
         }
 
       }
