@@ -12,11 +12,13 @@ $centerwidth: 85%;
 $fontlight: 300;
 $fontbold: 500;
 $color-tertiary-dark: darken($color-tertiary,40%);
-$margin-l-base: 22px;
+$margin-l-base: 26px;
 $margin-b: 15px;
 $gradiant: linear-gradient($color-secondary, $color-primary);
+$margin-queries: -15%;
 $width4k: 1600px;
 $breakpoints:(
     mobile: 767px,
-    tablet-desktop: 768px
+    tablet: 768px,
+    desktop: 1270px
 );

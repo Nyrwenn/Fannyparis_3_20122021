@@ -3,7 +3,7 @@
     background: $background-light;
     width: $fullwidth;
     padding-bottom: 60px;
-    @include tablet-desktop{
+    @include desktop{
         width: $fullwidth;
         align-items: center;
     }
@@ -14,7 +14,7 @@
     @include FC;
     width: $fullwidth;
     align-items: center;
-    @include tablet-desktop{
+    @include desktop{
         @include flexRW;
         max-width: $width4k;
         width: $fullwidth;
@@ -30,7 +30,7 @@
     text-decoration: none;
     margin-bottom: 20px;
     box-shadow: 0px 6px 9px -1px rgba(0,0,0,0.11);
-    @include tablet-desktop{
+    @include desktop{
         position: relative;
         width: 40%;
         margin-bottom: 35px;
@@ -43,7 +43,7 @@
     object-position: 39% 61%;
     height: 180px;
     border-radius: 20px 20px 0px 0px;
-    @include tablet-desktop{
+    @include desktop{
         height: 300px;
     }
 }
@@ -59,7 +59,7 @@
     margin-top: -170px;
     padding: 8px;
     border-radius: 2px;
-    @include tablet-desktop{
+    @include desktop{
         position: absolute;
         max-width: $width4k;
         right: auto;

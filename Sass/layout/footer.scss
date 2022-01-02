@@ -3,7 +3,10 @@ footer{
     background: $color-dark;
     width: $fullwidth;
     padding-bottom: 25px;
-    @include tablet-desktop{
+    @include tablet{
+        align-items: center;
+    }
+    @include desktop{
     align-items: center;
     }
 }
@@ -21,7 +24,11 @@ footer{
 .footer_container{
     @include FC;
     width: $fullwidth;
-    @include tablet-desktop{
+    @include tablet{
+        flex-direction: row;
+        justify-content: center;
+    }
+    @include desktop{
         flex-direction: row;
         justify-content: center;
     }

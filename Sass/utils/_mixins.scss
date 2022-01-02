@@ -56,12 +56,14 @@
     right: 15%;
     margin-top: 20px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 @mixin heart-big{
     position: absolute;
     margin-top: 37px;
     right: 7%;
+    cursor: pointer;
 }
 
 @mixin heart-full{
@@ -97,8 +99,14 @@
     }
 }
 
-@mixin tablet-desktop{
-    @media screen and (min-width: map-get($breakpoints, tablet-desktop)){
+@mixin tablet{
+    @media screen and (min-width: map-get($breakpoints, tablet)){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media screen and (min-width: map-get($breakpoints, desktop)){
         @content;
     }
 }

@@ -14,8 +14,7 @@ header{
     width: 165px;
     margin-top: 22px;
     margin-bottom: 12px;
-
-    @include tablet-desktop{
+    @include desktop{
         width: 300px;
     }
 }

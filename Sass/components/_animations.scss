@@ -88,14 +88,20 @@
 .heartfull{
     @include heart;
     transform: scale(0, 0);
-    @include tablet-desktop{
+    @include tablet{
+      @include tabheart;
+    }
+    @include desktop{
       @include tabheart;
     }
   }
   
   .heartempty{
     @include heart;
-    @include tablet-desktop{
+    @include tablet{
+      @include tabheart;
+    }
+    @include desktop{
       @include tabheart;
     }
   }
@@ -141,7 +147,10 @@
           }
           .p-rest{
               @include heart-big;
-              @include tablet-desktop{
+              @include tablet{
+                margin-top: 45px;
+              }
+              @include desktop{
                 margin-top: 45px;
               }
         }
@@ -153,7 +162,7 @@
   .check{
     display: flex;
     transform: translateX(105%);
-    width: 100px;
+    width: 105px;
     margin-left:-100px;
     justify-content: center;
     align-items: center;

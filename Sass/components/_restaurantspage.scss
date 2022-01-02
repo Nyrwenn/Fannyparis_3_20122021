@@ -9,7 +9,10 @@ main{
     width: $fullwidth;
     overflow: hidden;
     height: 65vw;
-    @include tablet-desktop{
+    @include tablet{
+        max-height: 650px;
+    }
+    @include desktop{
         max-height: 650px;         
     }
 }
@@ -18,20 +21,35 @@ main{
     width: $fullwidth;
     display: flex;
     align-self: center;
-    @include tablet-desktop{
-        margin-top: -15%;
+    @include tablet{
+        margin-top: $margin-queries;
+    }
+    @include desktop{
+        margin-top: $margin-queries;
+    }
+}
+
+.contain_bloc_menus{
+    width: $fullwidth;
+    @include desktop{
+        @include FR;
+        justify-content: space-between;
     }
 }
 
 .container_menus{
     width: $fullwidth;
+    margin-left: auto;
+    margin-right: auto;
     background: $background-light;
     border-radius: 50px 50px 0 0;
     position: relative;
     margin-top: -45px;
-    @include tablet-desktop{
-        margin-top: -15%;
-        
+    @include tablet{
+        margin-top: $margin-queries;
+    }
+    @include desktop{
+        margin-top: $margin-queries;
     }
 }
 
@@ -39,7 +57,7 @@ main{
     @include FR;
     width: $fullwidth;
     justify-content: space-between;
-    @include tablet-desktop{
+    @include desktop{
         justify-content: center;
     }
 }
@@ -50,7 +68,10 @@ h1.restaurants_name{
     font-weight: 200;
     margin-top: 40px;
     margin-left: $margin-l-base;
-    @include tablet-desktop{
+    @include tablet{
+        font-size: 2.5rem;
+    }
+    @include desktop{
         font-size: 2.5rem;
     }
 }
@@ -58,6 +79,14 @@ h1.restaurants_name{
 .bloc_menus{
     width: $fullwidth;
     margin-bottom: 37px;
+    @include tablet{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include desktop{
+        width: 33%;
+    }
 }
 
 h3{
