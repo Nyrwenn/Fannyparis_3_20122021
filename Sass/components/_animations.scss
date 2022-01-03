@@ -112,7 +112,7 @@
      
       & > .heartfull{
         display: block;
-        transition: transform 2s;
+        transition: transform $transitionheart;
         transform: scale(1, 1);
         transform-origin: bottom center;
       }
@@ -120,7 +120,7 @@
       
       & > .heartempty{
       fill: transparent;
-      transition: 3s;
+      transition: 2s;
       transform-origin: top center;
       }
       
@@ -132,7 +132,7 @@
 
         & > .heartfull{
           display: block;
-          transition: transform 2s;
+          transition: transform $transitionheart;
           transform: scale(1, 1);
           transform-origin: bottom center;
         }
@@ -140,7 +140,7 @@
         
         & > .heartempty{
         fill: transparent;
-        transition: 3s;
+        transition: 2s;
         transform-origin: top center;
         }
         
@@ -177,7 +177,7 @@
 
 @for $i from 1 through 10 {
   .anim#{$i} {
-     animation: progress-menu (1s * $i);
+     animation: progress-menu (0.7s * $i);
   }
 }
 

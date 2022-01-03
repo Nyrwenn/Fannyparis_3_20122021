@@ -69,14 +69,14 @@
 @mixin heart-full{
     transform: scale(1, 1);
     transform-origin: bottom center;
-    transition: transform 2s;
+    transition: transform $transitionheart;
     display: block;
 }
 
 @mixin heart-fill{
     transform-origin: top center;
     color: transparent;
-    transition: 4000ms;
+    transition: $transitionheart;
 }
 
 @mixin txt-overflow{
