@@ -93,15 +93,16 @@ h3{
     @include font-txt;
     font-weight: $fontlight;
     margin-left: $margin-l-base;
-    margin-bottom: 4px;
+    position: relative;
 }
 
-.line{
+h3::before{
+    content: "";
+    position: absolute;
+    top: 25px;
     width: 47px;
     height: 3px;
-    background: $color-tertiary;
-    margin-left: $margin-l-base;
-    margin-bottom: $margin-b;
+    background: $color-tertiary; 
 }
 
 .big_bloc_dish{
